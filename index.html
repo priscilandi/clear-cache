@@ -1,0 +1,138 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Clear Cache on Windows</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.3s ease-out;
+        }
+
+        .accordion-button.open + .accordion-content {
+            max-height: 1000px; /* Adjust as needed */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .accordion-button .fa-chevron-down {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .accordion-button.open .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-4xl">
+        <!-- Header -->
+        <header class="mb-6 pb-4 border-b border-gray-200">
+             <div style="display: flex; justify-content: center; align-items: center;">
+                <h1 class="text-3xl font-bold text-gray-900 text-center">How to Clear Cache on Windows</h1>
+            </div>      
+        </header>
+
+        <!-- When & Objective -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <h2 class="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                    <i class="fas fa-question-circle mr-3 text-blue-500"></i> When to Clear Cache?
+                </h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                    <li>Your computer is running slowly.</li>
+                    <li>To free up storage space.</li>
+                    <li>A website isn't displaying correctly.</li>
+                    <li>Troubleshooting system or app issues.</li>
+                    <li>To remove traces of your browsing activity.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <h2 class="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                    <i class="fas fa-bullseye mr-3 text-blue-500"></i> Objective
+                </h2>
+                <p class="text-gray-600">To show you how to clear temporary system files and browser cache on Windows to improve performance, free up space, and resolve common issues.</p>
+            </div>
+        </div>
+
+        <!-- Steps Accordion -->
+        <div class="space-y-4">
+            <!-- Option A: Windows Settings -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <button class="accordion-button w-full flex justify-between items-center text-left p-5 font-semibold text-gray-700 hover:bg-gray-50 rounded-lg">
+                    <span class="flex items-center"><i class="fas fa-desktop w-6 text-center mr-3 text-lg text-blue-500"></i> Option A: Clear Temporary Files via Windows Settings</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content px-5 text-gray-600">
+                    <ol class="list-decimal list-inside space-y-4 pl-4 border-l-2 border-blue-200">
+                        <li><strong>Navigate to Settings:</strong> Open the Windows Start menu, type "Settings", and open the app.</li>
+                        <li><strong>Go to Storage:</strong> In Settings, navigate to <strong>System > Storage</strong>.</li>
+                        <li><strong>Find Temporary Files:</strong> Click on <strong>Temporary files</strong>. Windows will take a moment to scan your system.</li>
+                        <li><strong>Select and Remove:</strong> Check the boxes for the file types you want to delete (e.g., Temporary Internet Files, Recycle Bin, Thumbnails). Be careful with the 'Downloads' folder if you have files there you want to keep.</li>
+                        <li><strong>Confirm Deletion:</strong> Click the <strong>Remove files</strong> button to clear the selected data.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Option B: Browser Cache -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <button class="accordion-button w-full flex justify-between items-center text-left p-5 font-semibold text-gray-700 hover:bg-gray-50 rounded-lg">
+                    <span class="flex items-center"><i class="fab fa-chrome w-6 text-center mr-3 text-lg text-blue-500"></i> Option B: Clear Browser Cache & Cookies</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content px-5 text-gray-600">
+                     <p class="mb-4">These general steps apply to most modern browsers like Chrome, Firefox, and Edge.</p>
+                     <ol class="list-decimal list-inside space-y-4 pl-4 border-l-2 border-blue-200 mb-6">
+                        <li><strong>Open Browser Settings:</strong> Launch your browser. Click the three-dot menu icon (usually in the top-right corner) and select <strong>Settings</strong>.</li>
+                        <li><strong>Find Privacy Options:</strong> Look for a <strong>Privacy and security</strong> section in the settings menu.</li>
+                        <li><strong>Clear Browsing Data:</strong> Click on <strong>Clear browsing data</strong> (or a similar option).</li>
+                        <li><strong>Choose Data and Time Range:</strong> In the dialog box, select a time range like "All time". Ensure that "Cookies and other site data" and "Cached images and files" are checked.</li>
+                        <li><strong>Confirm Action:</strong> Click the <strong>Clear data</strong> button to finalize.</li>
+                    </ol>
+                    <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 flex items-center"><i class="fas fa-keyboard mr-2"></i>Quick Keyboard Shortcut</h3>
+                        <p class="text-blue-700 mt-1">For most browsers, you can press <strong>Ctrl + Shift + Delete</strong> to directly open the "Clear browsing data" window.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Completion Message -->
+        <div class="mt-8 bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-r-lg" role="alert">
+            <p class="font-bold">Process Complete</p>
+            <p>You have successfully cleared the cache.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for accordion functionality
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // This allows only one accordion to be open at a time.
+                accordionButtons.forEach(otherButton => {
+                    if (otherButton !== button && otherButton.classList.contains('open')) {
+                        otherButton.classList.remove('open');
+                    }
+                });
+
+                // Toggle the clicked accordion
+                button.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
